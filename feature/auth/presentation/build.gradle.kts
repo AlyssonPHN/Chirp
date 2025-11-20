@@ -12,7 +12,7 @@ kotlin {
     androidLibrary {
         namespace = "com.marshall.auth.presentation"
         compileSdk = 36
-        minSdk = 34
+        minSdk = 24
 
         withHostTestBuilder {
         }
@@ -61,6 +61,10 @@ kotlin {
             dependencies {
                 implementation(libs.kotlin.stdlib)
                 // Add KMP dependencies here
+                implementation(projects.feature.auth.domain)
+                implementation(projects.core.domain)
+                implementation(projects.core.designsystem)
+                implementation(projects.core.presentation)
             }
         }
 

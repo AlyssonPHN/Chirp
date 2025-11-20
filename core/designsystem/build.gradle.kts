@@ -12,7 +12,7 @@ kotlin {
     androidLibrary {
         namespace = "com.marshall.core.designsystem"
         compileSdk = 36
-        minSdk = 34
+        minSdk = 24
 
         withHostTestBuilder {
         }

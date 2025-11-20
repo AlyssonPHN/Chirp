@@ -12,7 +12,7 @@ kotlin {
     androidLibrary {
         namespace = "com.marshall.chat.domain"
         compileSdk = 36
-        minSdk = 34
+        minSdk = 24
 
         withHostTestBuilder {
         }
@@ -60,7 +60,8 @@ kotlin {
         commonMain {
             dependencies {
                 implementation(libs.kotlin.stdlib)
-                // Add KMP dependencies here
+
+                implementation(projects.core.domain)
             }
         }
 

@@ -12,7 +12,7 @@ kotlin {
     androidLibrary {
         namespace = "com.marshall.domain"
         compileSdk = 36
-        minSdk = 34
+        minSdk = 24
 
         withHostTestBuilder {
         }
@@ -61,6 +61,7 @@ kotlin {
             dependencies {
                 implementation(libs.kotlin.stdlib)
                 // Add KMP dependencies here
+                implementation(projects.core.domain)
             }
         }
 

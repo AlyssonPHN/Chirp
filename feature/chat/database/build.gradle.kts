@@ -12,7 +12,7 @@ kotlin {
     androidLibrary {
         namespace = "com.marshall.chat.database"
         compileSdk = 36
-        minSdk = 34
+        minSdk = 24
 
         withHostTestBuilder {
         }
