@@ -5,7 +5,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        gradlepluginPortal()
+        gradlePluginPortal()
     }
     versionCatalogs {
         create("libs") {
@@ -14,4 +14,4 @@ dependencyResolutionManagement {
     }
 }
 
-include(":conventon")
+include(":convention")
