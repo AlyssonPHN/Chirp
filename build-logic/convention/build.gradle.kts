@@ -34,9 +34,17 @@ tasks {
 
 gradlePlugin {
     plugins {
-        register("androidApplicationConvention") {
+        register("androidApplication") {
             id = "com.marshall.chirp.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
+        }
+        register("androidComposeApplication") {
+            id = "com.marshall.chirp.android.application.compose"
+            implementationClass = "AndroidApplicationComposeConventionPlugin"
+        }
+        register("cmpApplication") {
+            id = "com.marshall.chirp.cmp.application"
+            implementationClass = "CmpApplicationConventionPlugin"
         }
     }
 }
