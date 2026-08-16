@@ -1,6 +1,7 @@
 package com.marshall.chirp.convention
 
 import org.gradle.api.Project
+import java.util.Locale
 
 fun Project.pathToPackageName(): String {
     val relativePackageName = path
@@ -10,9 +11,19 @@ fun Project.pathToPackageName(): String {
 }
 
 fun Project.pathToResourcePrefix(): String {
-    val relativePackageName = path
+    return path
         .replace(":", "_")
         .lowercase()
         .drop(1) + "_"
-    return "com.marshall$relativePackageName"
+}
+
+fun Project.pathToFrameworkName(): String {
+    val parts = this.path.split(":", "-", "_", " ")
+    // :core:data -> ["core", "data"] -> "CoreData
+    val result = parts.joinToString("") { part ->
+        part.replaceFirstChar {
+            it.titlecase(Locale.ROOT)
+        }
+    }
+    return result
 }

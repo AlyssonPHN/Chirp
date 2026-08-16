@@ -36,7 +36,7 @@ plugins {
 include(":composeApp")
 include(":core:presentation")
 include(":core:domain")
-include("com.marshall.core.data")
+include(":core:data")
 include(":core:designsystem")
 include(":feature:auth:presentation")
 include(":feature:auth:domain")
