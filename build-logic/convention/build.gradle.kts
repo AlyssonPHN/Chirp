@@ -59,5 +59,13 @@ gradlePlugin {
             id = "com.marshall.chirp.kmp.library.compose"
             implementationClass = "KmpLibraryComposeConventionPlugin"
         }
+        register("cmpLibrary") {
+            id = "com.marshall.chirp.cmp.library"
+            implementationClass = "CmpLibraryConventionPlugin"
+        }
+        register("cmpFeature") {
+            id = "com.marshall.chirp.cmp.feature"
+            implementationClass = "CmpFeatureConventionPlugin"
+        }
     }
 }

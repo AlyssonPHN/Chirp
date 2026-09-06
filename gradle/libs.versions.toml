@@ -172,6 +172,8 @@ convention-android-library = { id = "com.marshall.chirp.android.library", versio
 convention-cmp-application = { id = "com.marshall.chirp.cmp.application", version = "unspecified" }
 convention-kmp-library = { id = "com.marshall.chirp.kmp.library", version = "unspecified" }
 convention-kmp-library-compose = { id = "com.marshall.chirp.kmp.library.compose", version = "unspecified" }
+convention-cmp-library = { id = "com.marshall.chirp.cmp.library", version = "unspecified" }
+convention-cmp-feature = { id = "com.marshall.chirp.cmp.feature", version = "unspecified" }
 
 # Kotlin
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
