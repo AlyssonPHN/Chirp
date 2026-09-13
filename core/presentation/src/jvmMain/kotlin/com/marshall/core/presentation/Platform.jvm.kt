@@ -1,3 +1,3 @@
 package com.marshall.core.presentation
 
-actual fun platform() = "Android"
+actual fun platform(): String = "Java"

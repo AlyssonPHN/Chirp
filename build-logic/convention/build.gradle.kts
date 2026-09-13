@@ -13,6 +13,8 @@ dependencies {
     compileOnly(libs.kotlin.gradlePlugin)
     compileOnly(libs.compose.gradlePlugin)
     compileOnly(libs.ksp.gradlePlugin)
+    implementation(libs.buildkonfig.gradlePlugin)
+    implementation(libs.buildkonfig.compiler)
 }
 
 java {
@@ -66,6 +68,10 @@ gradlePlugin {
         register("cmpFeature") {
             id = "com.marshall.chirp.cmp.feature"
             implementationClass = "CmpFeatureConventionPlugin"
+        }
+        register("buildKonfig") {
+            id = "com.marshall.chirp.buildkonfig"
+            implementationClass = "BuildKonfigConventionPlugin"
         }
     }
 }
