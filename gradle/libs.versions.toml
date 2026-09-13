@@ -184,6 +184,7 @@ convention-kmp-library-compose = { id = "com.marshall.chirp.kmp.library.compose"
 convention-cmp-library = { id = "com.marshall.chirp.cmp.library", version = "unspecified" }
 convention-cmp-feature = { id = "com.marshall.chirp.cmp.feature", version = "unspecified" }
 convention-buildkonfig = { id = "com.marshall.chirp.buildkonfig", version = "unspecified" }
+convention-room = { id = "com.marshall.chirp.room", version = "unspecified" }
 
 # Kotlin
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
